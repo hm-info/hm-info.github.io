@@ -1,2 +1,3 @@
 # hm-info.github.io
-All Links
+
+<https://hm-info.github.io/>
