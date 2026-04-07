@@ -1,27 +1,115 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Documents</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #f5f5f5; color: #111; padding: 2rem 1.5rem; }
+    h1 { font-size: 24px; font-weight: 500; margin-bottom: 6px; }
+    p { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+    a.card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 14px 16px; text-decoration: none; display: flex; align-items: center; gap: 12px; transition: border-color 0.15s, background 0.15s; }
+    a.card:hover { border-color: #ccc; background: #fafafa; }
+    .icon { width: 36px; height: 36px; border-radius: 8px; background: #e8f0fe; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .icon svg { width: 16px; height: 16px; stroke: #2563eb; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .card-text { flex: 1; min-width: 0; }
+    .card-title { font-size: 14px; font-weight: 500; color: #111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-url { font-size: 12px; color: #999; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .arrow { color: #ccc; font-size: 18px; flex-shrink: 0; }
+  </style>
 </head>
+    
 <body>
-    <h1>Documents</h1>
-    <ul>
-        <li><a href="https://hm-info.github.io/dv408-20/">DV408-20 Manual</a></li>
-        <li><a href="https://hm-info.github.io/msc/">MSC Manual</a></li>
-        <li><a href="https://hm-info.github.io/hwm085-dbl-hrtg/>HWM085 Double Heritage Manual</a></li>
-        <li><a href="https://hm-info.github.io/hwm085-sngl-hrtg/>HWM085 Single Heritage Manual</a></li>
-        <li><a href="https://hm-info.github.io/hwm095/>HWM095 Manual</a></li>
-        <li><a href="https://hm-info.github.io/kt80330-34381/>KT803_30-34381 Manual</a></li>
-        <li><a href="https://hm-info.github.io/kt80330-34387/>KT803_30-34387 Manual</a></li>
-        <li><a href="https://hm-info.github.io/kt80850-34381/>KT808_50-34381 Manual</a></li>
-        <li><a href="https://hm-info.github.io/kt80850-34387/>KT808_50-34387 Manual</a></li>
-        <li><a href="https://hm-info.github.io/kt815/>KT815 Manual</a></li>
-        <li><a href="https://hm-info.github.io/ktcsv/>KT803 KT808 Csv File Description</a></li>
-        <li><a href="https://hm-info.github.io/msc/>MSC Manual</a></li>
-        <li><a href="https://hm-info.github.io/rg830robot/>RG830 Robot Manual</a></li>
-        <li><a href="https://hm-info.github.io/tt-barcode/>Barcode Label Structure TT4x5</a></li>
-        <li><a href="https://hm-info.github.io/tt425/>TT425 Manual</a></li>
-    </ul>
+  <h1>Documents</h1>
+  <p>HM Info — Technical Manuals &amp; References</p>
+  <div class="grid">
+
+    <a class="card" href="https://hm-info.github.io/dv408-20/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">DV408-20 Manual</div><div class="card-url">hm-info.github.io/dv408-20/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/hwm085-dbl-hrtg/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">HWM085 Double Heritage Manual</div><div class="card-url">hm-info.github.io/hwm085-dbl-hrtg/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/hwm085-sngl-hrtg/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">HWM085 Single Heritage Manual</div><div class="card-url">hm-info.github.io/hwm085-sngl-hrtg/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/hwm095/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">HWM095 Manual</div><div class="card-url">hm-info.github.io/hwm095/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/kt80330-34381/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT803_30-34381 Manual</div><div class="card-url">hm-info.github.io/kt80330-34381/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/kt80330-34387/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT803_30-34387 Manual</div><div class="card-url">hm-info.github.io/kt80330-34387/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/kt80850-34381/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT808_50-34381 Manual</div><div class="card-url">hm-info.github.io/kt80850-34381/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/kt80850-34387/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT808_50-34387 Manual</div><div class="card-url">hm-info.github.io/kt80850-34387/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/kt815/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT815 Manual</div><div class="card-url">hm-info.github.io/kt815/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/ktcsv/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">KT803 KT808 CSV File Description</div><div class="card-url">hm-info.github.io/ktcsv/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/msc/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">MSC Manual</div><div class="card-url">hm-info.github.io/msc/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/rg830robot/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">RG830 Robot Manual</div><div class="card-url">hm-info.github.io/rg830robot/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/tt-barcode/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">Barcode Label Structure TT4x5</div><div class="card-url">hm-info.github.io/tt-barcode/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card" href="https://hm-info.github.io/tt425/">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="card-text"><div class="card-title">TT425 Manual</div><div class="card-url">hm-info.github.io/tt425/</div></div>
+      <span class="arrow">›</span>
+    </a>
+
+  </div>
 </body>
 </html>
